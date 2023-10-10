@@ -11,7 +11,7 @@ export const ContentContainer: React.FC<Props> = ({ children }) => {
   return (
     <div className="flex-1 drawer h-52 flex-col justify-between">
       <input id="my-drawer" type="checkbox" className="grow drawer-toggle" />
-      <div className="items-center drawer-content flex flex-col justify-between">
+      <div className="drawer-content flex flex-col justify-between">
         {children}
       </div>
       {/* SideBar / Drawer */}
@@ -25,19 +25,19 @@ export const ContentContainer: React.FC<Props> = ({ children }) => {
           <li>
             <NavElement
               label="Create Token"
-              href="/"
+              href="/create"
             />
           </li>
           <li>
           <NavElement
               label="Shop"
-              href="/basics"
+              href="/"
             />
             </li>
             <li>
             <NavElement
               label="Learn"
-              href="/basics"
+              href="/"
             />
             </li>
         </ul>

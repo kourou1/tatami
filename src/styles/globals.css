@@ -7,7 +7,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background-image: linear-gradient(to bottom, #05051C, #150A40)
+  background-image: linear-gradient(to bottom, #05051C, #150A40);
 }
 
 a {
@@ -24,3 +24,17 @@ a {
   background-color: #707070;
 }
 
+input[type="file"]::file-selector-button {
+  background-color: #2C2C5A;
+  border: 0;
+  color: transparent;
+  background-image: url('/plus.png');
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
+  background-position: center;
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+  border-radius: 6px;
+  border:#5a5a5f solid 1px;
+}

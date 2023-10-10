@@ -19,13 +19,13 @@ module.exports = {
             display: ['PT Mono, monospace'],
             body: ['Inter, sans-serif'],
           },
-          'primary': '#000000',           /* Primary color */
-          'primary-focus': '#9945FF',     /* Primary color - focused */
-          'primary-content': '#ffffff',   /* Foreground content color to use on primary color */
-
+          'primary': '#secondary-content',           /* Primary color */
+          'primary-focus': '#040216',     /* Primary color - focused */
+          'primary-content': '#2C2C5A',   /* Foreground content color to use on primary color */
+          
           'secondary': '#808080',         /* Secondary color */
           'secondary-focus': '#f3cc30',   /* Secondary color - focused */
-          'secondary-content': '#ffffff', /* Foreground content color to use on secondary color */
+          'secondary-content': '#9393A9', /* Foreground content color to use on secondary color */
 
           'accent': '#33a382',            /* Accent color */
           'accent-focus': '#2aa79b',      /* Accent color - focused */

@@ -1,4 +1,8 @@
 import Image from "next/image";
+import { useRouter } from "next/router";
+import { WalletNotConnectedError } from '@solana/wallet-adapter-base';
+import { useConnection, useWallet } from '@solana/wallet-adapter-react';
+import {notify} from "../utils/notifications";
 
 type PresetBoxProps = {
     title: string,
@@ -11,8 +15,20 @@ const PresetBox = ({
     desc,
     price
 }: PresetBoxProps) => {
+  const { publicKey } = useWallet();
+  const router = useRouter();
+
+  const handleClick = () => {
+    if (!publicKey) {
+      return notify({ type: 'error', message: 'error', description: 'Wallet not connected!' });
+    }
+
+    router.replace("/create")
+    
+  }
+
     return (
-        <div className="relative group xl:w-96">
+        <div className="xl:w-96 hover:cursor-pointer" onClick={handleClick}>
           <div className="max-w-md mx-auto bg-[#040216] border-2 border-[#2C2C5A] rounded-xl p-4 px-6 my-2">
             <h4 className='text-lg font-semibold mb-3'>{title}</h4>
             <hr className='border-[#2C2C5A] border-b-2'/>

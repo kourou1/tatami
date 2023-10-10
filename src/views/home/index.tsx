@@ -30,7 +30,7 @@ export const HomeView: FC = ({ }) => {
 
   return (
 
-    <div className="md:hero mx-auto p-4">
+    <div className="md:hero mx-auto py-4">
       <div className="md:hero-content flex flex-col">
         <div className='mt-4'>
         <p className="flex flex-col items-center">

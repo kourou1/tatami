@@ -22,8 +22,7 @@ export const AppBar: React.FC = () => {
         <div className="navbar-start align-items-center">
           <Image src="/logo.png" alt="logo" width={28} height={28} className="hidden sm:inline-flex lg:ml-40"/>
           <div className="hidden sm:inline w-22 h-22 md:p-2">
-            <Link href="https://solana.com" target="_blank" rel="noopener noreferrer" passHref 
-              className="text-secondary hover:text-white flex flex-row gap-2">
+            <Link href="/" className="text-secondary hover:text-white flex flex-row gap-2">
               <h1 className='text-2xl font-bold text-white'>tatami</h1>
             </Link>
           </div>
@@ -32,17 +31,17 @@ export const AppBar: React.FC = () => {
           <div className="hidden md:inline-flex align-items-center justify-items gap-12 ml-12">
             <NavElement
               label="Create Token"
-              href="/"
+              href="/create"
               navigationStarts={() => setIsNavOpen(true)}
             />
             <NavElement
               label="Shop"
-              href="/basics"
+              href="/"
               navigationStarts={() => setIsNavOpen(false)}
             />
             <NavElement
               label="Learn"
-              href="/basics"
+              href="/"
               navigationStarts={() => setIsNavOpen(false)}
             />
         </div>
